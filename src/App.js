@@ -16,6 +16,10 @@ import ResetPasswordPage from './Pages/ResetPasswordPage'
 import NearbyRestaurants from './Component/NearbyRestaurants';
 import LiveRoom from './Component/Home/LiveRoom'
 import RoomPage from './Component/Room'
+import VerificationPage from './Pages/VerificationPage'
+import WorkoutPlans from './Component/WorkoutPlans'
+import CommunityRoom from './Component/Home/CommunityRoom'
+import Community from './Component/Community'
 
 function App () {
   return (
@@ -28,15 +32,18 @@ function App () {
         <Route path='/login' element={<LoginPage />}></Route>
         <Route path='/profile' element={<NeedLogin> <Profile /></NeedLogin>}></Route> 
         <Route path='/' element={<HomePage />}></Route>
-        <Route path='/plan' element={<NeedLogin>< PlanFromPage/></NeedLogin>}></Route>
+        <Route path='/plan' element={<NeedLogin><PlanFromPage/></NeedLogin>}></Route>
         <Route path='/faq' element={<FaqPage />}></Route>
         <Route path='/feedback' element={< FeedbackPage/>}></Route>
         <Route path='/addtocard' element ={<Addtocard />}></Route>
+        <Route path='/verification' element={<VerificationPage />}></Route>
         <Route path='/NearbyRestaurants' element ={<NearbyRestaurants/>}></Route>
         <Route path='/ResetPassword' element={<ResetPasswordPage />}></Route>
         <Route path='/LiveRoom' element={<NeedLogin><LiveRoom/></NeedLogin>}></Route>
         <Route path='/room/:roomId' element={<RoomPage/>}></Route>
-        
+        <Route path='/charts' element={<WorkoutPlans/>}></Route>
+        <Route path='/CommunityRoom' element={<CommunityRoom/>}></Route>
+        <Route path='/community/:communityId' element={<Community/>}></Route>
       </Routes>
       <Footer />
     </div>

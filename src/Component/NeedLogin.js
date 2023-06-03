@@ -12,6 +12,7 @@ export const NeedLogin = (props) => {
   useEffect(() => {
     if (auth.currentUser) {
       if (!auth.currentUser.emailVerified) {
+        auth.languageCode = 'EN'
         naviagate('/verification', { replace: true })
       }
     }

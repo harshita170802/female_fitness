@@ -37,7 +37,7 @@ export const Navber = () => {
 
       <h3>
         <NavLink
-          to="/plan"
+          to="/charts"
           className={({ isActive }) => (isActive ? 'selected' : null)}>
           Plans
         </NavLink>

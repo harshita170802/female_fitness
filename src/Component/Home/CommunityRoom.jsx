@@ -1,11 +1,11 @@
 import React,{useCallback,useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const LiveRoom=()=>{
+const CommunityRoom=()=>{
     const [value,setValue]=useState();
     const navigate = useNavigate();
     const handleJoinRoom=useCallback(()=>{
-    navigate(`/room/${value}`)
+    navigate(`/community/${value}`)
     },[navigate,value])
     return(
         <div  className='liveroomcontainer'>
@@ -19,10 +19,10 @@ const LiveRoom=()=>{
             ></input>
             <button
             onClick={handleJoinRoom}
-             >Join</button>
+            >Join</button>
         </div>
-        <h6>*** NOTE : Enter Room Code as fitness123 ***</h6>
+        <h6>*** NOTE : Enter Room Code as Communityfitness123 ***</h6>
         </div>
     )
 }
-export default LiveRoom
+export default CommunityRoom

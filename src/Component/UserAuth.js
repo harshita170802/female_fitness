@@ -12,7 +12,7 @@ export const UserAuth = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    // watch auth from firebase, if there is a user,store the userinfo to the redux
+
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         dispatch(setuserinfo(user))

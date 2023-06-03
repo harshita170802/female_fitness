@@ -18,9 +18,6 @@ const OtherAuth = () => {
   const auth = getAuth()
   const handleGoogle = async () => {
     const provider = new GoogleAuthProvider()
-
-    // signup with google and yahoo,store the userinfo to firebase store,and if is login,change the isOnline to true
-
     signInWithPopup(auth, provider)
       .then((result) => {
         const credential = GoogleAuthProvider.credentialFromResult(result)

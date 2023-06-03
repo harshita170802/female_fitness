@@ -1,8 +1,8 @@
 import React from "react";
 import '../Component/css/ecomm.css'
 import { useState } from 'react';
-import { faCartShopping, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faCartShopping, faTrash } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import img1 from '../assets/image/protein.jfif';
 import img2 from '../assets/image/resistace.jfif';
 import img3 from '../assets/image/kneeband.jfif';
@@ -62,8 +62,8 @@ export const Addtocard=()=>{
       <div className="ecomheader">
         <p style={{color:'#4f53b9',textAlign:'center'}}className="ecomlogo">E-Commerce</p>
         <div className="ecomcart">
-          <FontAwesomeIcon icon={faCartShopping} />
-          <p id="count">{cart.length}</p>
+         
+          <p id="count">Bag : {cart.length}</p>
         </div>
       </div>
       <div className="ecomcontainer">
@@ -93,7 +93,7 @@ export const Addtocard=()=>{
                 </div>
                 <p style={{fontSize: '12px'}}>{product.title}</p>
                 <h2 style={{fontSize: '20px',color: 'red'}}>$ {product.price}.00</h2>
-                <FontAwesomeIcon icon={faTrash} onClick={() => removeFromCart(index)} />
+                
               </div>
             ))}
           </div>

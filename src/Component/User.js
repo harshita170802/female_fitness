@@ -15,7 +15,6 @@ export const User = ({
   const otherUserUid = user.uid
   const [lastmsg, setLastmsg] = useState('')
 
-  // get lastmessage to render it
   useEffect(() => {
     const id =
       localUserUid > otherUserUid
@@ -28,7 +27,6 @@ export const User = ({
     return () => unsub()
   }, [])
 
-  // if user click a public message , add it to user list and click it to show message container
   useEffect(() => {
     if (newfriend === otherUserUid) {
       selector(otherUserUid)

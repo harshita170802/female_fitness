@@ -10,8 +10,6 @@ export const MessageForm = ({
   chatimg,
   setChatimg,
 }) => {
-  // use Hooks to close the emoji box if user click outside the emoji box
-  // still have bugs here,click emoji icon surrend is not effect
   const { show, nodeRef, triggerRef, setShow } = useDetectClickOut(false)
 
   const handleEmoji = (event, emoji) => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import img from '../assets/img/img.jpg'
 import img1 from '../assets/img/1.jpg'
 import img2 from '../assets/img/2.jpg'
@@ -7,7 +7,6 @@ import cont from '../assets/img/cont.jpg'
 import communityimg from '../assets/img/communityimg.png'
 import videoCall from '../assets/img/videoCall.png'
 import { useNavigate } from 'react-router-dom'
-import { AOS } from 'aos';
 
 const Home = () => {
   const myImageStyle = { width: '100%', height: 'auto'  };
@@ -16,28 +15,25 @@ const Home = () => {
   const navigate = useNavigate();
 
   const navigateToecomm = () => {
-   
     navigate('/addtocard');
   };
   const navigateTorestaurants = () => {
-   
     navigate('/NearbyRestaurants');
   };
   const navigateToliveRoom=()=>{
     navigate('/LiveRoom');
+  }
+  const navigateToCommunityRoom=()=>{
+    navigate('/CommunityRoom');
   }
 
   return (
 
     <div className='container'>
       <br />
-      
-
       <div className='mainpic'>
       <img style={myImageStyle}   src={img}/>
       </div>
-      
-
       <div className='home'>
           <center><b> WHAT IS FEMALE FITNESS ?</b></center>
           <p>Fitness Buddy is a community based health and fitness website. It aims to offer a social environment for people interested in health and fitness. The main focus of the application is to create a positive community for like-minded people to have a place to get together and help each other in achieving a common goal.</p>
@@ -119,14 +115,11 @@ const Home = () => {
                   </div>
                 </div>
                 </div>
-             
-
                 <div class=" b1">
                 <div class="img1" >
                     <img  src={cont}width="800" height="500"/>
-                </div>
-                </div>
-        
+              </div>
+        </div> 
       </div> 
      
       {/** Video Call  */}
@@ -150,7 +143,7 @@ const Home = () => {
         <div className='videodesp'>
         <h2>Community forum</h2>
             <h6>The fitness community project aims to create a space for women to connect, share their fitness journeys, and provide support. Through the community forum, women can share their fitness goals, challenges, and successes, and inspire each other to improve their health. This project will provide a platform for women to access resources and expert advice, while also building a sense of community and connection.</h6>
-        <button onClick={navigateToliveRoom}>Join Community forum</button>
+        <button onClick={navigateToCommunityRoom}>Join Community forum</button>
         </div>
         <div className='image'>
          <img src={communityimg} alt='videocall'/>
@@ -158,21 +151,12 @@ const Home = () => {
         </div>
         
       </div>
-    
- 
-
-
-
-
 
      <br />
      <br />
      <br />
 
     </div>
-    
-
-
    
   );
 };

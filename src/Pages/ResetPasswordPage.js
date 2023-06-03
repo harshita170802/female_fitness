@@ -11,7 +11,7 @@ const ResetPasswordPage = () => {
   const handleReset = (e) => {
     e.preventDefault()
     const auth = getAuth()
-    auth.languageCode = 'JA'
+    auth.languageCode = 'EN'
     sendPasswordResetEmail(auth, email)
       .then(() => {
       

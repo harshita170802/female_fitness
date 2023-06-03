@@ -1,6 +1,11 @@
 import React from "react"
 import '../Component/css/plans.css';
+import { useNavigate } from 'react-router-dom'
 export const PlanFrom =()=>{
+  const navigate = useNavigate();
+  const navigatecharts = () => {
+    navigate('/charts');
+  };
     return(
     <div className="planbody">
       <br/>
@@ -55,9 +60,9 @@ export const PlanFrom =()=>{
 
             
           </form>
-          <a href="/" >
+          <a  onClick={navigatecharts} >
             <div class="planfield planbutton-planfield">
-              <button type="submit" onClick="">
+              <button type="submit">
                 Proceed to Checkout
               </button>
             </div>

@@ -59,7 +59,7 @@ export const Register = () => {
     }
     try {
       const result = await createUserWithEmailAndPassword(auth, email, password)
-      auth.languageCode = 'JA'
+      auth.languageCode =  'EN'
       sendEmailVerification(auth.currentUser).then(() => {
         // Email verification
       })
