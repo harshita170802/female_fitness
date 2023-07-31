@@ -2,9 +2,7 @@
 
 A responsive web application chat-app used with Html Css Javascript react redux and back end with firebase.
 
-### :zap: [Website HERE](https://chatapp-react-firebase-8b8ad.web.app/)
 
-![screenshot](/chat-app-firebase/public/screenshot.png)
 
 - [About](#about)
 - [How To Run Locally](#how-to-run-locally)
