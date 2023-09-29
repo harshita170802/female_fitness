@@ -1,4 +1,4 @@
-# Friendly
+# Get In Shape
 
 A responsive web application chat-app used with Html Css Javascript react redux and back end with firebase.
 
