@@ -1,6 +1,6 @@
 # Get In Shape
 
-A responsive web application chat-app used with Html Css Javascript react redux and back end with firebase.
+A responsive web application used with Html Css Javascript react redux and back end with firebase.
 
 
 
@@ -10,7 +10,7 @@ A responsive web application chat-app used with Html Css Javascript react redux 
 
 ## About
 
-This is a responsive web application chat-app used with Html Css Javascript React Hooks React Router Redux Rtk and back end with Firebase.
+This is a responsive web application used with Html Css Javascript React Hooks React Router Redux Rtk and back end with Firebase.
 
 It has main 5 pages,and user can sigin signup to send messages to other users, and add them to friend list to start private chat.
 
